@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fece2f">
+
+    <Button
+        android:id="@+id/viewAllIns"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/viewins"
+        app:layout_constraintEnd_toStartOf="@+id/deleteIns"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewAllMembers" />
+
+    <Button
+        android:id="@+id/viewAllMembers"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="200dp"
+        android:text="@string/viewcus"
+        app:layout_constraintEnd_toStartOf="@+id/deleteMembers"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/deleteMembers"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="70dp"
+        android:text="@string/delecus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/viewAllMembers"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/deleteIns"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="70dp"
+        android:text="@string/deleins"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/viewAllIns"
+        app:layout_constraintTop_toBottomOf="@+id/deleteMembers" />
+
+    <TextView
+        android:id="@+id/cusID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/cusID"
+        app:layout_constraintBottom_toTopOf="@+id/viewAllMembers"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/insId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/insID"
+        app:layout_constraintBottom_toTopOf="@+id/viewAllIns"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/getCusID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:inputType="none"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/deleteMembers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cusID"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/getInsID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:inputType="none"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/deleteIns"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/insId"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/back_button_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle"
+        android:contentDescription="@string/back"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:padding="5dp"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

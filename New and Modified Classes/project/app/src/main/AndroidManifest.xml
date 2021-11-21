@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tttt">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".EditClassInstructor"
+            android:exported="true" />
+        <activity
+            android:name=".SearchInstructorName"
+            android:exported="true"/>
+        <activity
+            android:name=".ClassSearchActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CreateClassInstructor"
+            android:exported="true" />
+        <activity
+            android:name=".UserWelcome"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".Welcome" />
+        <activity android:name=".DeleteUserActivity" />
+        <activity android:name=".ClassActivity" />
+        <activity android:name=".CreateActivity" />
+        <activity android:name=".AdminActivity" />
+        <activity android:name=".InstructorActivity" />
+    </application>
+
+</manifest>

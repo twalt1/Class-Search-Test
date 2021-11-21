@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fece2f"
+    tools:context=".EditClassInstructor">
+
+    <Button
+        android:id="@+id/cancelClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Class"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.73" />
+
+    <Button
+        android:id="@+id/confirmChangesInstructor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apply Changes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.834" />
+
+    <Button
+        android:id="@+id/instructorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Classes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.931" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="395dp"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.313">
+
+        <EditText
+            android:id="@+id/insGetClassID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter the ID of the Class you Want to Edit/Delete"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/insGetClassTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Edit Title"
+            android:inputType="textPersonName" />
+
+        <Spinner
+            android:id="@+id/classType_id2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/classDifficulty_id2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/dayOfWeek_id3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/insGetClassDescr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Edit Description"
+            android:inputType="textPersonName" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Edit Capacity"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidthFocused="2dp"
+            app:endIconTint="@color/black"
+            app:hintTextColor="@color/black"
+            app:startIconTint="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/insEnterCap"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:fontFamily="sans-serif-black"
+                android:inputType="text"
+                android:textColor="@color/black"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <EditText
+            android:id="@+id/insGetTime"
+            android:layout_width="match_parent"
+            android:hint="Edit the Time (24hrs)"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="time" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/backBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle"
+        android:contentDescription="@string/back"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:padding="5dp"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
